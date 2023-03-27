@@ -12,6 +12,8 @@ module.exports = {
       green: "#68F590",
       grey: "#F3F3F3",
       "grey-light": "#FAFAFA",
+      "grey-deep": "#424242",
+      "grey-medium": "lightslategray",
       "green-light": "#d2eff1",
       white: "#fff",
     },
@@ -51,6 +53,6 @@ module.exports = {
     },
     extend: {},
   },
-  darkMode: "class",
+  // darkMode: "class",
   plugins: [],
 };

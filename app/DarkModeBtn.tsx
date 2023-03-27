@@ -19,8 +19,12 @@ function DarkModeBtn() {
   const currentTheme = theme === "system " ? systemTheme : theme;
 
   return (
-    <div className="flex justify-end">
-      <select value={theme} onChange={(e) => setTheme(e.target.value)}>
+    <div className="flex justify-end absolute right-4 top-4 ">
+      <select
+        className="hidden "
+        value={theme}
+        onChange={(e) => setTheme(e.target.value)}
+      >
         <option value="system">System</option>
         <option value="dark">Dark</option>
         <option value="light">Light</option>

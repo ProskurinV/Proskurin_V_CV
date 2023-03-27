@@ -2,13 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  /* Your default theme */
-  --background: white;
-  --foreground: black;
-}
+@layer base {
+  h1 {
+    @apply text-yellow text-4xl sm:text-6xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  h4 {
+    @apply text-base;
+  }
+  p {
+    @apply text-base;
+  }
 
-[data-theme="dark"] {
-  --background: black;
-  --foreground: white;
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+  }
+
+  html {
+    @apply font-serif;
+  }
 }
