@@ -4,7 +4,15 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 import { BsTelegram, BsFillTelephoneFill } from "react-icons/bs";
 import profilPic from "../images/Volodymyr_P.jpg";
 
-export const Sidebar = ({ data }) => {
+interface SidebarData {
+  name: string;
+  role: string;
+  summary: string;
+  body: string;
+  contacts: string[];
+}
+
+export const Sidebar = ({ data }: { data: SidebarData }) => {
   const { name, role, summary, body, contacts } = data;
   return (
     <div className=" flex flex-col content-between w-full h-auto sm:h-screen sm:justify-around sm:w-1/3 sm:fixed">
