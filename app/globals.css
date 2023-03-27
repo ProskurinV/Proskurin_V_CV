@@ -30,3 +30,11 @@
     @apply font-serif;
   }
 }
+
+section {
+  @apply mb-10;
+}
+
+main h2 {
+  @apply uppercase;
+}

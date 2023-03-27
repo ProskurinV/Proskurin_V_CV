@@ -1,6 +1,6 @@
 export const proskurinData = {
   name: "Proskurin Volodymyr",
-  role: "FrontEnd (FullStack) Developer",
+  role: "Front End (Full Stack) Developer",
   summary: "SUMMARY",
   body: "I`m results-driven Front-End Developer, who already has few projects implemented both individually and as part of a team. I am passionate about software application development and never thought I would enjoy it so much.",
   contacts: [
@@ -30,7 +30,7 @@ export const skills = {
 };
 
 export const lang = {
-  title: "Languages",
+  title: "LANGUAGES",
   body: [
     { item: "English", status: " intermediate" },
     { item: "Ukrainian", status: " native" },
@@ -39,9 +39,17 @@ export const lang = {
 };
 
 export const education = {
-  education: [
-    "Full Stack Developer, GOIT (IT SCHOOL)",
-    "SPECIALIST IN JURISPRUDENCE,Yaroslav Mudryi National Law University",
+  title: "EDUCATION",
+  body: [
+    {
+      position: "Full Stack Developer, GOIT (IT School)",
+      period: "04/2022 - 02/2023",
+    },
+    {
+      position:
+        "Spesialist in jurisprudence,Yaroslav Mudryi National Law University",
+      period: "2004 - 2010",
+    },
   ],
 };
 
