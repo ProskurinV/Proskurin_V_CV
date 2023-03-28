@@ -1,22 +1,13 @@
 import Image from "next/image";
-import { Key } from "react";
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 import { BsTelegram, BsFillTelephoneFill } from "react-icons/bs";
 import profilPic from "../images/Volodymyr_P.jpg";
 
-interface SidebarData {
-  name: string;
-  role: string;
-  summary: string;
-  body: string;
-  contacts: string[];
-}
-
-export const Sidebar = ({ data }: { data: SidebarData }) => {
+export const Sidebar = ({ data }) => {
   const { name, role, summary, body, contacts } = data;
   return (
-    <div className=" flex flex-col content-between w-full h-auto sm:h-screen sm:justify-around sm:w-1/3 sm:fixed">
-      <div className="flex flex-col p-10 items-center ">
+    <div className="bg-black flex flex-col  content-between w-full h-auto sm:h-screen sm:justify-around sm:w-1/3 sm:fixed">
+      <div className="text-white flex flex-col p-10 items-center">
         <Image
           priority
           src={profilPic}
@@ -29,10 +20,10 @@ export const Sidebar = ({ data }: { data: SidebarData }) => {
         <h2 className="mb-8">{role}</h2>
         <p className="mb-2 text-center">{summary}</p>
         <p className="mb-2">{body}</p>
-        <div className="text-center mb-4 mt-4 sm:mt-8">
+        <div className="text-white text-center mb-4 mt-4 sm:mt-8">
           <h3 className="text-center mb-2">CONTACTS</h3>
           <ul className="flex justify-center gap-4 cursor-pointer text-2xl ">
-            {contacts.map((contact: any, index: Key | null | undefined) => (
+            {contacts.map((contact, index) => (
               <li key={index}>
                 {index === 0 && (
                   <a

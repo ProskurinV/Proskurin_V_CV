@@ -30,7 +30,9 @@
     ".next/types/**/*.ts",
     "app/components/Languages.jsx",
     "app/components/AboutMe.jsx",
-    "app/page.jsx"
+    "app/page.jsx",
+    "app/components/SideBar.jsx",
+    "app/components/Skills.jsx"
   ],
   "exclude": ["node_modules"]
 }

@@ -1,6 +1,6 @@
 import { Sidebar } from "./components/SideBar";
 import "./globals.css";
-import DarkModeBtn from "./DarkModeBtn";
+// import DarkModeBtn from "./DarkModeBtn";
 
 import { Providers } from "./Providers";
 import { proskurinData } from "./data/my-info";
@@ -18,7 +18,8 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className="flex flex-col sm:flex-row">
         <Providers>
-          <DarkModeBtn />
+          {/* <DarkModeBtn /> */}
+
           <Sidebar data={proskurinData} />
           <main className="grow-full p-8 sm:p-16 w-full sm:basis-2/3  ml-auto">
             {children}

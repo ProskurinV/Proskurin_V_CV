@@ -66,7 +66,7 @@ export const professionalData = {
         "Effectively represented clients in civil court proceedings.",
         "Prepared notices and made appearances in court.",
       ],
-      current: false,
+      period: "2019 - 2022",
     },
   ],
 };
