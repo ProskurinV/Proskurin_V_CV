@@ -6,10 +6,9 @@ import profilPic from "../images/Volodymyr_P.jpg";
 export const Sidebar = ({ data }) => {
   const { name, role, summary, body, contacts } = data;
   return (
-    <div className="bg-black flex flex-col  content-between w-full h-auto sm:h-screen sm:justify-around sm:w-1/3 sm:fixed">
+    <div className="bg-cadetblue flex flex-col content-between w-full h-auto  sm:justify-around ">
       <div className="text-white flex flex-col p-10 items-center">
         <Image
-          priority
           src={profilPic}
           width={300}
           height={300}

@@ -1,15 +1,20 @@
-import { Inter } from "next/font/google";
+import { Sidebar } from "./components/SideBar";
 import { Education } from "./components/AboutMe";
-import { education, lang, skills, professionalData } from "./data/my-info";
 import { Languages } from "./components/Languages";
 import { Skills } from "./components/Skills";
 import Experience from "./components/Experience";
-
-const inter = Inter({ subsets: ["latin"] });
+import {
+  proskurinData,
+  education,
+  lang,
+  skills,
+  professionalData,
+} from "./data/my-info";
 
 export default function Home() {
   return (
-    <main className={inter.className}>
+    <main>
+      <Sidebar data={proskurinData} />
       <Education data={education} />
       <Languages data={lang} />
       <Skills data={skills} />

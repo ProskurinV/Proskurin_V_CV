@@ -19,7 +19,7 @@ function DarkModeBtn() {
   const currentTheme = theme === "system " ? systemTheme : theme;
 
   return (
-    <div className="flex justify-end absolute right-4 top-4 ">
+    <div className="flex justify-end absolute right-4 top-4 z-10">
       <select
         className="hidden "
         value={theme}

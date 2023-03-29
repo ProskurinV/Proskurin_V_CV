@@ -7,10 +7,12 @@ module.exports = {
   ],
   theme: {
     colors: {
+      cadetblue: "#5f9ea0",
       black: "#191A19",
       yellow: "#FFF734",
       green: "#68F590",
       grey: "#F3F3F3",
+      slategrey: "rgb(148 163 184)",
       "grey-light": "#FAFAFA",
       "grey-deep": "#424242",
       "grey-medium": "lightslategray",
@@ -53,6 +55,6 @@ module.exports = {
     },
     extend: {},
   },
-  // darkMode: "class",
+  darkMode: "class",
   plugins: [],
 };
