@@ -1,5 +1,5 @@
 export const proskurinData = {
-  name: "Proskurin Volodymyr",
+  name: "Volodymyr Proskurin",
   role: "Front End (Full Stack) Developer",
   summary: "SUMMARY",
   body: "I`m results-driven Front-End Developer, who already has few projects implemented both individually and as part of a team. I am passionate about software application development and never thought I would enjoy it so much.",
