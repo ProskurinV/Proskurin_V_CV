@@ -34,12 +34,14 @@ const Header = () => {
           V.P.
         </Link>
 
-        <Link href="/" className="cursor-pointer mr-8">
-          Home
-        </Link>
-        <Link href="/portfolio" className="cursor-pointer mr-8">
-          Portfolio
-        </Link>
+        <ul className="hidden md:flex">
+          <Link href="/" className="cursor-pointer mr-8">
+            Home
+          </Link>
+          <Link href="/portfolio" className="cursor-pointer mr-8">
+            Portfolio
+          </Link>
+        </ul>
       </h1>
 
       <button type="button" onClick={handleNav} className="md:hidden">

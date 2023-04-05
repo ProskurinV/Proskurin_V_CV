@@ -2,13 +2,10 @@ import "./globals.css";
 // import DarkModeBtn from "./DarkModeBtn";
 import Header from "./components/Header";
 
-import { Providers } from "./Providers";
+// import { Providers } from "./Providers";
 
 export const metadata = {
   title: "Proskurin_V CV",
-  icons: {
-    icon: "/icon-36x36.ico",
-  },
 };
 
 export default function RootLayout({
@@ -19,11 +16,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex flex-col ">
-        <Providers>
-          {/* <DarkModeBtn /> */}
+        <Header />
+        <main className="grow-full p-8">{children}</main>
+        {/* <Providers>
+          <DarkModeBtn />
           <Header />
           <main className="grow-full p-8">{children}</main>
-        </Providers>
+        </Providers> */}
       </body>
     </html>
   );
