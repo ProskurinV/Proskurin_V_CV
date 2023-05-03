@@ -37,12 +37,12 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link href="/#about" className="cursor-pointer mr-8">
+            <Link href="#about" className="cursor-pointer mr-8">
               About
             </Link>
           </li>
           <li>
-            <Link href="/#skills" className="cursor-pointer mr-8">
+            <Link href="#skills" className="cursor-pointer mr-8">
               Skills
             </Link>
           </li>
