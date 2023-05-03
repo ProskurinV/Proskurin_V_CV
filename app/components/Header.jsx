@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
+import { Link as ScrollLink } from "react-scroll";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -37,14 +38,15 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link href="#about" className="cursor-pointer mr-8">
+            <ScrollLink to="about" className="cursor-pointer mr-8">
               About
-            </Link>
+            </ScrollLink>
           </li>
+
           <li>
-            <Link href="#skills" className="cursor-pointer mr-8">
+            <ScrollLink to="skills" className="cursor-pointer mr-8">
               Skills
-            </Link>
+            </ScrollLink>
           </li>
           <li>
             <Link href="/portfolio" className="cursor-pointer mr-8">
