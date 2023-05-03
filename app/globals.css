@@ -47,5 +47,5 @@ main h2 {
 }
 
 .skill {
-  @apply bg-green-light text-lg py-2 px-2 w-fit rounded-md;
+  @apply bg-green-light text-lg py-2 px-1 w-fit rounded-md p-6 shadow-xl  hover:scale-105 ease-in duration-300;
 }

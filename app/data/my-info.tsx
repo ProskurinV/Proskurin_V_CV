@@ -1,3 +1,17 @@
+import Image from "next/image";
+
+import Css from "../images/skills/css.png";
+import Firebase from "../images/skills/firebase.png";
+import Git from "../images/skills/github1.png";
+import Html from "../images/skills/html.png";
+import JS from "../images/skills/javascript.png";
+import Mongo from "../images/skills/mongo.png";
+import Next from "../images/skills/nextjs.png";
+import Node from "../images/skills/node.png";
+import React from "../images/skills/react.png";
+import Redux from "../images/skills/redux.png";
+import Tailwind from "../images/skills/tailwind.png";
+
 export const proskurinData = {
   name: "Volodymyr Proskurin",
   role: "Front End (Full Stack) Developer",
@@ -14,19 +28,59 @@ export const proskurinData = {
 
 export const skills = {
   tech: [
-    "HTML & CSS(SCSS)",
-    "JavaScript",
-    "React",
-    "Redux",
-    "Git",
-    "NodeJS",
-    "MongoDB",
-    "Mongoose",
-    "Next",
-    "Styled-components",
-    "Tailwind CSS",
+    {
+      name: "HTML",
+      img: <Image src={Html} alt="HTML " width={50} height={50} />,
+    },
+    {
+      name: "CSS",
+      img: <Image src={Css} alt="HTML " width={50} height={50} />,
+    },
+    {
+      name: "JavaScript",
+      img: <Image src={JS} alt="JS" width={50} height={50} />,
+    },
+    {
+      name: "React",
+      img: <Image src={React} alt="React" width={50} height={50} />,
+    },
+    {
+      name: "Redux",
+      img: <Image src={Redux} alt="Redux" width={50} height={50} />,
+    },
+    {
+      name: "Git",
+      img: <Image src={Git} alt="Git" width={50} height={50} />,
+    },
+    {
+      name: "NodeJS",
+      img: <Image src={Node} alt="Node" width={50} height={50} />,
+    },
+    {
+      name: "MongoDB",
+      img: <Image src={Mongo} alt="Node" width={50} height={50} />,
+    },
+
+    {
+      name: "Next",
+      img: <Image src={Next} alt="Next" width={50} height={50} />,
+    },
+
+    {
+      name: "Tailwind CSS",
+      img: <Image src={Tailwind} alt="Tailwind" width={50} height={50} />,
+    },
+    {
+      name: "Firebase",
+      img: <Image src={Firebase} alt="Firebase" width={50} height={50} />,
+    },
   ],
-  soft: ["Willingness to learn", "Self management", "Honest", "Teamwork"],
+  soft: [
+    { name: "Willingness to learn" },
+    { name: "Self management" },
+    { name: "Honest" },
+    { name: "Teamwork" },
+  ],
 };
 
 export const lang = {

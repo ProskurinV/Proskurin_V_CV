@@ -11,9 +11,7 @@ export const Sidebar = ({ data }) => {
         <Image
           priority
           src={profilPic}
-          width={300}
-          height={300}
-          className="rounded-full h-full mb-6"
+          className="rounded-full h-full mb-6 w-auto"
           alt="Picture of me"
         />
         <h1 className="mb-2">{name}</h1>

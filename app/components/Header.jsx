@@ -2,9 +2,6 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-
 const Header = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
@@ -25,28 +22,55 @@ const Header = () => {
   }, []);
 
   return (
-    <nav className="bg-slategrey p-4 sticky top-0 drop-shadow-xl ">
-      <h1 className="flex ">
-        <Link
-          href="/"
-          className="cursor-pointer  font-bold self-center text-4xl mr-auto"
-        >
-          V.P.
-        </Link>
-
-        <ul className="hidden md:flex">
-          <Link href="/" className="cursor-pointer mr-8">
-            Home
-          </Link>
-          <Link href="/portfolio" className="cursor-pointer mr-8">
-            Portfolio
-          </Link>
+    <header className="px-2 flex items-center justify-between w-full h-full">
+      <Link
+        href="/"
+        className="cursor-pointer font-bold self-center text-4xl mr-auto"
+      >
+        V.P.
+      </Link>
+      <nav className=" drop-shadow-xl hidden md:flex items-center">
+        <ul className="flex items-center">
+          <li>
+            <Link href="/" className="cursor-pointer mr-8">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link href="/#about" className="cursor-pointer mr-8">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link href="/#skills" className="cursor-pointer mr-8">
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link href="/portfolio" className="cursor-pointer mr-8">
+              Portfolio
+            </Link>
+          </li>
         </ul>
-      </h1>
-
+      </nav>
+      {/* burger */}
       <button type="button" onClick={handleNav} className="md:hidden">
-        <AiOutlineMenu size={25} />
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          className="w-6 h-6"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
       </button>
+
       <div
         className={
           nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
@@ -69,52 +93,50 @@ const Header = () => {
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
               >
-                <AiOutlineClose />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
               </div>
             </button>
           </div>
           <div className="py-4 ">
             <ul className="uppercase flex flex-col w-fit">
-              <Link
-                href="/"
-                onClick={() => setNav(false)}
-                className="py-4 text-sm"
-              >
-                V.P.
-              </Link>
-              <Link
-                href="/"
-                onClick={() => setNav(false)}
-                className="py-4 text-sm"
-              >
-                Home
-              </Link>
-              <Link
-                href="/#about"
-                onClick={() => setNav(false)}
-                className="py-4 text-sm"
-              >
-                About
-              </Link>
-              <Link
-                href="/#skills"
-                onClick={() => setNav(false)}
-                className="py-4 text-sm"
-              >
-                Skills
-              </Link>
-              <Link
-                href="/#projects"
-                onClick={() => setNav(false)}
-                className="py-4 text-sm"
-              >
-                Projects
-              </Link>
+              <li className="py-4 text-sm">
+                <Link href="/" onClick={() => setNav(false)}>
+                  Home
+                </Link>
+              </li>
+              <li className="py-4 text-sm">
+                <Link href="/#about" onClick={() => setNav(false)}>
+                  About
+                </Link>
+              </li>
+              <li className="py-4 text-sm">
+                <Link href="/#skills" onClick={() => setNav(false)}>
+                  Skills
+                </Link>
+              </li>
+              <li className="py-4 text-sm">
+                <Link href="/portfolio" onClick={() => setNav(false)}>
+                  Portfolio
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
       </div>
-    </nav>
+    </header>
   );
 };
 export default Header;

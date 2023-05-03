@@ -31,16 +31,19 @@ export const Skills = ({ data }) => {
     >
       {data[activeTab].map((skill, index) => (
         <li key={index} className="skill">
-          {skill}
+          <div className="flex gap-4 justify-center items-center p-2">
+            {skill.img}
+            {skill.name}
+          </div>
         </li>
       ))}
     </ul>
   );
 
   return (
-    <div>
+    <section id="skills">
       {tabs}
       {content}
-    </div>
+    </section>
   );
 };
