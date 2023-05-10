@@ -25,28 +25,28 @@ const Header = () => {
   return (
     <header className="px-2 flex items-center justify-between w-full h-full">
       <Link
-        href="/"
+        href="/#s"
         className="cursor-pointer font-bold self-center text-4xl mr-auto"
       >
         V.P.
       </Link>
-      <nav className=" drop-shadow-xl hidden md:flex items-center">
-        <ul className="flex items-center">
+      <nav className=" drop-shadow-xl hidden md:flex items-center ">
+        <ul className="flex items-center ">
           <li>
             <Link href="/" className="cursor-pointer mr-8">
               Home
             </Link>
           </li>
           <li>
-            <ScrollLink to="about" className="cursor-pointer mr-8">
+            <Link href="/#about" className="cursor-pointer mr-8">
               About
-            </ScrollLink>
+            </Link>
           </li>
 
           <li>
-            <ScrollLink to="skills" className="cursor-pointer mr-8">
+            <Link href="/#skills" className="cursor-pointer mr-8 ">
               Skills
-            </ScrollLink>
+            </Link>
           </li>
           <li>
             <Link href="/portfolio" className="cursor-pointer mr-8">

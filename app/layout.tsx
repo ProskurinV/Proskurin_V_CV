@@ -8,6 +8,8 @@ export const metadata = {
   title: "Proskurin_V CV",
 };
 
+
+
 export default function RootLayout({
   children,
 }: {

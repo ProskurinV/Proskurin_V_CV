@@ -9,7 +9,7 @@ export const Skills = ({ data }) => {
   const setTabsAlign = (tab) => (tab === "tech" ? "text-left" : "text-right");
 
   const tabs = (
-    <div className="flex">
+    <div className="flex" id="skills">
       {["tech", "soft"].map((element) => (
         <button
           key={element}
@@ -25,6 +25,7 @@ export const Skills = ({ data }) => {
 
   const content = (
     <ul
+      id="skills"
       className={`flex flex-row flex-wrap content-start list-none py-4 gap-2 ${
         activeTab === "tech" ? "justify-start" : "justify-end"
       }`}
