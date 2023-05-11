@@ -38,15 +38,15 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link href="/#about" className="cursor-pointer mr-8">
+            <ScrollLink to="about" className="cursor-pointer mr-8">
               About
-            </Link>
+            </ScrollLink>
           </li>
 
           <li>
-            <Link href="/#skills" className="cursor-pointer mr-8 ">
+            <ScrollLink to="skills" className="cursor-pointer mr-8 ">
               Skills
-            </Link>
+            </ScrollLink>
           </li>
           <li>
             <Link href="/portfolio" className="cursor-pointer mr-8">
@@ -82,7 +82,7 @@ const Header = () => {
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500 "
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500 h-screen"
           }
         >
@@ -120,14 +120,14 @@ const Header = () => {
                 </Link>
               </li>
               <li className="py-4 text-sm">
-                <Link href="/#about" onClick={() => setNav(false)}>
+                <ScrollLink to="about" onClick={() => setNav(false)}>
                   About
-                </Link>
+                </ScrollLink>
               </li>
               <li className="py-4 text-sm">
-                <Link href="/#skills" onClick={() => setNav(false)}>
+                <ScrollLink to="skills" onClick={() => setNav(false)}>
                   Skills
-                </Link>
+                </ScrollLink>
               </li>
               <li className="py-4 text-sm">
                 <Link href="/portfolio" onClick={() => setNav(false)}>
